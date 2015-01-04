@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;}
+.life_wrap{
+    width: 100%;
+    margin-top: 22px;
+    min-height: 500px;
+    .life_saying{
+        text-align: right;
+        background: url("images/saying-137-26-201409201857.png") no-repeat 0 0;
+        text-indent: -9999em;
+    }
+    #container{
+        position:relative;
+        width:1100px;
+        margin:0 auto 25px;
+        padding-bottom: 10px;
+        .grid{
+            width:260px;
+            min-height:100px;
+            padding: 0;
+            background:#fff;
+            font-size:12px;
+            float:left;
+            -webkit-transition: top 1s ease, left 1s ease;
+            -moz-transition: top 1s ease, left 1s ease;
+            -o-transition: top 1s ease, left 1s ease;
+            -ms-transition: top 1s ease, left 1s ease;
+            .imgholder img{
+                width: 100%;
+                max-width:100%;
+                background:#ccc;
+                display:block;
+            }
+            .life_content{
+                padding: 10px 14px;
+                .life_main_content{
+                    font-size: 12px;
+                    color: #555;
+                    p{
+                        line-height: 20px;
+                        .more-link{
+                            display: none;
+                        }
+                    }
+                }
+                .life_title{
+                    font-size: 12px;
+                    color: @default_color;
+                    font-weight: normal;
+                    text-align: right;
+                }
+                .time{
+                    color: #666;
+                    font-size: 12px;
+                    font-style: italic;
+                    text-align: right;
+                }
+            }
+        }
+
+    }
+
+}
+@media screen and (max-width : 1240px) {
+    body{
+        overflow:auto;
+    }
+}
+@media screen and (max-width:1100px) {
+    .life_wrap{
+        #container{
+            .grid{
+                width: 300px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 960px){
+    .life_wrap{
+        #container{
+            .grid{
+                width: 420px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 880px){
+    .life_wrap{
+        #container{
+            .grid{
+                width: 360px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 760px){
+    .life_wrap{
+        #container{
+            .grid{
+                width: 640px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px){
+    .life_wrap{
+        #container{
+            .grid{
+                width: 320px;
+            }
+        }
+    }
+}
